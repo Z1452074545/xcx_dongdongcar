@@ -1,0 +1,58 @@
+<!--pages/get/get.wxml-->
+<view class='place'>
+<view class='place_left'>
+<image src='{{place.place_img}}'></image>
+</view>
+
+<view class='place_cont'>
+ <view wx:if="{{flag}}" class='place_cont_true'>
+<view>{{cite_json.name}} <text>{{cite_json.phone}}</text></view>
+<view>{{cite_json.cite}}</view>
+ </view>
+ <view wx:else class='place_cont_false'>
+ <text>暂无收货地址,点击添加</text>
+ </view>
+</view>
+
+<view class='place_right' bindtap='a_cite'>
+<image src='{{place.place_right}}'></image>
+</view>
+</view>
+<view class='sti_box sticker'>
+<view class='sticker_left'>
+<image src='{{sticker_img}}'></image>
+</view>
+<view class='sticker_right'>
+<view class='sticker_title'>{{sticker.title}}</view>
+<view class='sti_fonsi sticker_texture'>材质：{{sticker.texture}}</view>
+<view class='sti_fonsi sticker_size'>尺寸：{{sticker.size}}</view>
+<view class='sti_fonsi sticker_price'>
+￥{{sticker.price}}
+<view class='sticker_num' style='width:45%'>
+<view class='num_pos minus' style='width:45rpx;' bindtap='sticker_minus'>-</view>
+<view class='num' style='width:75rpx;'>{{sticker_num}}</view>
+<view class='num_pos add' style='width:45rpx;' bindtap='sticker_add'>+</view>
+</view>
+</view>
+</view>
+</view>
+<view class='sti_box'>
+ <view class='reuse_line'>
+ 商品总价 <text>￥9.90</text>
+ </view>
+ <view class='reuse_line'>
+  运费 <text>￥0.00</text>
+ </view>
+ <view class='total'>
+   共<span>{{sticker_num}}</span>件商品  合计：<span>￥{{total_prices}}</span>
+ </view>
+</view>
+<view class='open'>
+<view class='open_left'>
+合计金额：<span>￥{{total_prices}}</span>
+</view>
+<view class='open_right' bindtap='Immediately_open'>
+立即开启
+</view>
+</view>
+

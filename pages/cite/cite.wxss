@@ -1,0 +1,224 @@
+/* pages/cite/cite.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background: #ebebeb;
+}
+.cite{
+  width: 95%;
+  height: 200rpx;
+  background: #fff;
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+}
+.cite_left{
+  float: left;
+  width: 85%;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 15rpx 0 0 15rpx;
+}
+.cite_img{
+  float: left;
+  width: 15%;
+  height: 200rpx;
+  /* background: red; */
+}
+.cite_img image{
+  display: block;
+  margin: 0 auto;
+  margin-top: 90%;
+  width: 40%;
+  height: 17%;
+}
+.cite_cont{
+  float: left;
+  width: 85%;
+  height: 200rpx;
+  font-size: 28rpx;
+}
+.cite_cont view{
+  width: 100%;
+  height: 100rpx;
+  font-size: 28rpx;
+}
+.ci_co_top{
+line-height: 100rpx;
+}
+.cite_right{
+  float: right;
+  width: 15%;
+  height: 200rpx;
+  background: #f8d538;
+  /* color: #f8d538; */
+  text-align: center;
+  line-height: 200rpx;
+  border-radius:0 15rpx 15rpx 0;
+}
+.new_add{
+  width: 95%;
+  height: 90rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background: #f8d538;
+  color: #2f53bc;
+  box-shadow: 2px 2px 2px #333;
+}
+.modai{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ebebeb;
+}
+.get_cont{
+  width: 95%;
+  height: 495rpx;
+  background: #fff;
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+}
+.reuse_line{
+  display: block;
+  width: 95%;
+  height: 100rpx;
+  border-bottom: 1px solid #b7b7b7;
+  margin-left: 2.5%;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 15rpx;
+  font-size: 30rpx;
+}
+
+.cite_cite {
+  /* width: 100%; */
+}
+.reuse_line input{
+  width: 80%;
+  float: right;
+  height: 99rpx;
+}
+.cite_cite input {
+  /* width: 100%; */
+  background-color: #fff;
+  /* padding: 20rpx 50rpx; */
+}
+
+.section {
+  padding-top: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+} 
+
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citypicker{
+  
+}
+.citybody {
+  position: fixed;
+  bottom: 0px;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+picker-view-column{
+  text-align: center;
+}
+.area{
+  width: 80%;
+  float: right;
+}
+.textarea{
+  height: 200rpx; 
+  display: block;
+  width: 95%;
+  margin-left: 2.5%;
+  box-sizing: border-box;
+  padding: 0 15rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.textarea textarea{
+  width: 80%;
+  height: 200rpx;
+  float: right;
+  line-height: 50rpx;
+}
+.but_editor{
+  width: 95%;
+  margin: 40rpx auto;
+  height: 400rpx;
+}
+.but_editor view{
+  width: 100%;
+  height: 80rpx;
+  background: #f8d834;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  box-shadow: 2px 2px 2px #333;
+  text-align: center;
+  line-height: 80rpx;
+  color: #2f53bc;
+  font-weight:600;
+  font-size:32rpx;
+}

@@ -1,0 +1,66 @@
+/* pages/sms/sms.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.img_bi{
+  width: 100%;
+  height: 100%;
+}
+.m_body{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.title_txt{
+  width: 100%;
+  height: 155rpx;
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 50rpx;
+  font-weight: 700;
+  color: #fff;
+}
+.sms_box{
+  width: 90%;
+  height: 150rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  margin-top:50rpx;
+  position: relative;
+}
+.sms_box image{
+  width: 100%;
+  height: 100%;
+}
+.sms_txt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  font-size: 32rpx;
+  color: #333;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+.sms_txt view{
+  line-height: 56rpx;
+}
+.but_send{
+  width: 90%;
+  height: 85rpx;
+  background: #f8da33;
+  margin: 40rpx auto;
+  text-align: center;
+  line-height: 85rpx;
+  color: #3254bb;
+  font-size: 38rpx;
+  box-shadow: 6rpx 6rpx 6rpx #333;
+  border-radius: 15rpx;
+}

@@ -1,0 +1,52 @@
+/* pages/accredit_pop/accredit_pop.wxss */
+.accredit_body{
+ width:100%;
+height:100%;
+background:rgba(188,188,188,0.6);
+z-index:99999;
+position:fixed;
+top:0;
+left:0;
+}
+.accredit_box{
+  width: 90%;
+  height: 450rpx;
+  background: #fff;
+  margin: 140rpx auto;
+  border-radius: 15rpx;
+  overflow: hidden;
+  position: relative;
+}
+.accredit_title{
+  width: 100%;
+  text-align: center;
+  margin-top:10rpx;
+
+}
+.accredit_cont{
+  width: 90%;
+  height: 210rpx;
+  margin: 0 auto;
+  font-size: 34rpx;
+}
+.accredit_cont view{
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+.accredit_but{
+  width: 90%;
+  height: 80rpx;
+  margin: 0 auto;
+}
+.accredit_box button{
+  margin-top: 10%;
+  height: 80rpx;
+  width: 30%;
+}
+.accredit_cancel{
+  float: left;
+}
+.accredit_affirm{
+  float: right;
+}

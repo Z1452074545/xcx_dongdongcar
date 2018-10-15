@@ -1,0 +1,22 @@
+<!--pages/accredit_pop/accredit_pop.wxml-->
+<template name="accredit">
+  <view class="accredit_body">
+    <view class='accredit_box'>
+    <!-- title -->
+     <view class='accredit_title'>
+       微信授权
+     </view>
+     <!-- 内容 -->
+     <view class='accredit_cont'>
+       <view>· 获取您的公开信息(昵称,头像等)</view>
+       <view>· </view>
+       <view>· </view>
+     </view>
+     <!-- but -->
+     <view class='accredit_but'>
+     <button class='accredit_cancel' bindtap='close'>取消</button>
+     <button open-type="getUserInfo" class='accredit_affirm' bindtap='close_pop'>点击授权        </button>
+     </view>
+    </view>
+  </view>
+</template>

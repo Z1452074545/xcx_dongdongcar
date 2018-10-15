@@ -1,0 +1,230 @@
+/* pages/moveCar/moveCar.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.img_bi{
+  width: 100%;
+  height: 100%;
+}
+.m_body{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.title_txt{
+  width: 100%;
+  height: 155rpx;
+  text-align: center;
+  line-height: 155rpx;
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #fff;
+}
+/* 车牌 */
+.car_mark{
+  width: 240rpx;
+  height: 95rpx;
+  margin:0 auto;
+  position: relative;
+}
+.car_mark image{
+  width: 100%;
+  height: 100%;
+}
+.car_mark view{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 95rpx;
+  color: #fff;
+}
+.remind{
+  width: 90%;
+  height: 435rpx;
+  background: #fff;
+  margin: 40rpx auto;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  padding-top: 50rpx;
+}
+.remind_txt{
+  width: 85%;
+  height: 80rpx;
+  font-size: 28rpx;
+  margin: 0 auto;
+}
+.remind_tit{
+  width: 95%;
+  /* height: 60rpx; */
+  font-size: 28rpx;
+  margin: 60rpx auto;
+  overflow: hidden;
+}
+.icon_sj{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 18rpx;
+  float: left;
+}
+.icon_sj image{
+  width: 100%;
+  height: 100%;
+}
+.icon_txt{
+  float: left;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+.remind_but{
+  width: 90%;
+  height: 85rpx;
+  margin: 0 auto;
+  color: #2f53bc;
+}
+.re_but{
+  width: 270rpx;
+  height: 85rpx;
+  background: #f8de2d;
+  border-radius: 15rpx;
+  text-align: center;
+  line-height: 85rpx;
+  box-shadow: 6rpx 6rpx 6rpx #ccc;
+}
+.re_but_left{
+  float: left;
+}
+.re_but_right{
+  float: right;
+}
+/* 更多服务 */
+.more{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: -26rpx;
+  font-size: 34rpx;
+}
+
+.menu{
+  width: 90%;
+  background: #fff;
+  height: 200rpx;
+  margin: 18rpx auto;
+  border-radius: 15rpx;
+}
+.menu_chile{
+  float: left;
+  width: 25%;
+  height: 100%;
+  margin-top: 20rpx;
+}
+.menu_chile image{
+  display: block;
+  width: 75%;
+  height: 64%;
+  margin: 0 auto;
+  
+}
+.menu_chile text{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+}
+.error_txt{
+  float: left;
+  line-height: 45rpx;
+  margin-left: 20rpx;
+  width: 90%;
+  color: #f2f3f3;
+  font-size: 34rpx;
+}
+.pop_phone{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(166,166,166,0.6);
+}
+.sty_phone{
+  line-height: 140rpx;
+}
+.phone_box{
+  width: 90%;
+  height: 450rpx;
+  background: #fff;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  margin-left: -45%;
+  border-radius: 15rpx;
+}
+.pop{
+  width: 30%;
+  height:100rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 9%;
+  left: 50%;
+  margin-left: -15%;
+  border-radius: 15rpx;
+}
+
+.car_but{
+  width: 90%;
+  height: 80rpx;
+  /* border-top:1rpx solid #333;  */
+  position: absolute;
+  bottom: 15rpx;
+  left: 50%;
+  margin-left: -45%;
+}
+.car_but_boxs{
+  text-align: center;
+  line-height: 80rpx;
+  color: #2f53bc;
+  width: 40%;
+  background: #f8da32;
+  border-radius: 15rpx;
+  box-shadow: 6rpx 6rpx 6rpx #ccc;
+}
+.car_but_left{
+  float: left;
+  /* border-right: 1rpx solid #333; */
+}
+.car_but_right{
+  float: right;
+  /* border-left: 1rpx solid #333; */
+}
+.car_user{
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height:100rpx;
+}
+.car_phone{
+  display: block;
+  white-space: pre-wrap;
+  margin: 0 auto;
+  margin-top: 0rpx;
+  width: 80%;
+  text-align: center;
+  height: 240rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+
+}

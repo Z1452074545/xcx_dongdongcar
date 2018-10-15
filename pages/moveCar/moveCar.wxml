@@ -1,0 +1,72 @@
+<!--pages/moveCar/moveCar.wxml-->
+<image src='{{img_bi}}' class='img_bi'></image>
+<view class='m_body'>
+<!-- title -->
+  <view class='title_txt'>临时停靠 请多关照</view>
+<!-- 车牌号 -->
+  <view class='car_mark'>
+    <image src='{{car_bi}}'></image>
+    <view>京A · 00001</view>
+  </view>
+  <!-- 提醒车主 -->
+  <view class='remind'>
+    <view class='remind_txt'>我的爱车如果阻碍了您的车辆通过,
+    点击下方按钮通知我,给您带来不便请谅解  
+    </view>
+    <view class='remind_tit'>
+      <view class='icon_sj'>
+        <image src='{{icon_sj}}'></image>
+      </view>
+      <view class='icon_txt'>为保护双方隐私,以下通知使用虚拟号码进行通信</view>
+    </view>
+    <!-- 按钮 -->
+    <view class='remind_but'>
+      <view class='re_but re_but_left' bindtap='a_phone'>电话呼叫</view>
+       <view class='re_but re_but_right' bindtap='a_sms'>短信提醒</view>
+    </view>
+  </view>
+  <!-- 跟多服务 -->
+  <view class='more'>/ 更多服务 /</view>
+  <view  class='menu'>
+    <block wx:for="{{menu_list}}" wx:key="key" >
+      <view class='menu_chile' data-index='{{index}}' bindtap='get_menu_index'>
+        <image src='{{item.img}}'></image>
+          <text>{{item.txt}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- error -->
+  <view class='remind_tit'>
+      <view class='icon_sj'>
+        <image src='{{icon_sj}}'></image>
+      </view>
+      <view class='error_txt'>{{error_txt}}</view>
+  </view>
+  <!-- 电话呼叫 弹窗 -->
+  <view class='pop_phone' wx:if="{{pop_phone_state}}">
+    <view class='phone_box'>
+    <block wx:if="{{state_flag}}">
+     
+      <view class='car_user'>{{user_list.title}}</view>
+      <view class='car_phone sty_phone'>{{user_list.phone}}</view>
+      
+    </block>
+    <block wx:if="{{!state_flag}}">
+     
+      <view class='car_user'>{{service_list.title}}</view>
+      <view class='car_phone'>{{service_list.phone}}</view>
+    
+    </block>
+      <view class='car_but'>
+        <view class='car_but_boxs car_but_left' bindtap='car_but_left'>取消</view>
+        <view class='car_but_boxs car_but_right' bindtap='call_up'>确认</view>
+      </view>
+    
+    </view>
+
+  </view>
+  <!-- 弹窗 -->
+  <view class='pop' wx:if="{{pop_state}}">
+   暂未开启
+  </view>
+</view>

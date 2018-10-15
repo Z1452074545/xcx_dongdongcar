@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<import src="../accredit_pop/accredit_pop.wxml"/>
+<template is='accredit' wx:if='{{acc_state}}'></template>
+<image src='{{img_bgi}}' class='img_bgi'></image>
+<view class='car_but move_car' bindtap='move_car'>我要挪车</view>
+<view class='car_but bind_car' bindtap='bind_car'>绑定爱车</view>
+

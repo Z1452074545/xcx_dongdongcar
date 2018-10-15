@@ -1,0 +1,23 @@
+<!--pages/sms/sms.wxml-->
+<image src='{{img_bi}}' class='img_bi'></image>
+<view class='m_body'>
+<!-- title -->
+  <view class='title_txt'>请选择您要发送给车主的信息</view>
+  <view class='sms_box' bindtap='state_order_n' data-state='1'>
+  
+    <image src='{{img_border}}' wx:if="{{flag}}"></image>
+    <view class='sms_txt'>
+      <view>{{warn}}</view>
+      {{state_order_n}}
+    </view>
+  </view>
+  <view class='sms_box' bindtap='state_order_t' data-state='0'>
+    <image src='{{img_border}}' wx:if="{{!flag}}"></image>
+    <view class='sms_txt'>
+      <view>{{warn}}</view>
+      {{state_order_t}}
+    </view>
+  </view>
+  <!-- but -->
+  <view class='but_send' bindtap='but_send'>确认发送</view>
+</view>

@@ -1,0 +1,31 @@
+/* pages/user/user.wxss */
+page{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ebebeb;
+}
+.meun{
+  width: 95%;
+  height: 550rpx;
+  background: #fff;
+  margin: 20rpx auto;
+  border-radius: 8rpx;
+}
+.meun_chile{
+  width: 33%;
+  height: 50%;
+  float: left;
+}
+.meun_chile image{
+  display: block;
+  margin: 10rpx auto;
+  width: 75%;
+  height: 65%;
+}
+.meun_chile text{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+} 

@@ -1,0 +1,25 @@
+<!--pages/serve/serve.wxml-->
+<import src="../accredit_pop/accredit_pop.wxml"/>
+<template is='accredit' wx:if='{{acc_state}}'></template>
+<swiper 
+class='swiper_ban' indicator-dots="true" autoplay="true"
+circular="true" indicator-color="rgba(236,237,232,0.8)" 
+indicator-active-color="#fff">
+  <block wx:for="{{imgUrls}}" wx:key="key" >
+    <swiper-item >
+      <image src="{{item}}" class="slide-image" data-index='{{index}}' bindtap='get_index'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view  class='menu'>
+ <block wx:for="{{menu_list}}" wx:key="key" >
+<view class='menu_chile' data-index='{{index}}' bindtap='get_menu_index'>
+ <image src='{{item.img}}'></image>
+ <text>{{item.txt}}</text>
+ </view>
+  </block>
+</view>
+<text>{{index}}</text>
+
+
+

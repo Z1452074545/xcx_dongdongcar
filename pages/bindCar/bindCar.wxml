@@ -1,0 +1,57 @@
+<!--pages/bindCar/bindCar.wxml-->
+<image src='{{img_bi}}' class='img_bi'></image>
+<view class='user_box user_img'>
+<view class='user_left'>
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+  </view>
+</view>
+<view class='user_right'>{{user_txt}}</view>
+</view>
+
+<view class='user_box user_text'>
+<!-- 车牌号码 -->
+  <view class='car_box car_mark'>
+   车牌号码 
+    <view class='drop_down'>
+      <image src='{{pull_img}}'></image>
+        <view class='drop_box'>
+<view class='select_box'>
+    <view class='select' catchtap='selectTap' data-sel_da_in='{{selectData[index]}}'>
+        <text class='select_text' >{{selectData[index]}}</text>
+    </view>
+    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+</view>
+        </view>
+    </view>
+    <!-- input -->
+    <view class='u_t_carMark'>
+    <input placeholder='' value='' bindinput='u_t_carMark'/>
+    </view>
+  </view>
+  <!-- 电话号码 -->
+  <view class='car_box phone_mark'>
+    手机号码
+    <view>
+      <input placeholder='' value='' bindinput='u_t_phoneMark' bindblur='loginPhone'/>
+    </view>
+  </view>
+  <!-- 验证码 -->
+  <view class='car_box'>
+    验证码
+    <view class='code_but' bindtap='get_code'>获取</view>
+    <view class='code_mark'>
+      <input placeholder='' value='' bindinput='u_t_codeMark' />
+    </view> 
+  </view>
+</view>
+<!-- 立即开启 -->
+<view class='user_box user_but'>
+立即开启
+</view>
+

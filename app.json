@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/serve/serve",
+    "pages/get/get",
+    "pages/user/user",
+    "pages/cite/cite",
+    "pages/moveCar/moveCar",
+    "pages/bindCar/bindCar",
+    "pages/sms/sms",
+    "pages/accredit_pop/accredit_pop"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "动动车",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a8a9a9",
+    "selectedColor": "#5cace7",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "挪车",
+        "iconPath": "images/icon_car.png",
+        "selectedIconPath": "images/icon_car_active.png"
+      },
+      {
+        "pagePath": "pages/serve/serve",
+        "text": "服务",
+        "iconPath": "images/icon_serve.png",
+        "selectedIconPath": "images/icon_serve_active.png"
+      },
+      {
+        "pagePath": "pages/get/get",
+        "text": "领取",
+        "iconPath": "images/icon_get.png",
+        "selectedIconPath": "images/icon_get_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon_user.png",
+        "selectedIconPath": "images/icon_user_active.png"
+      }
+    ]
+  }
+}
